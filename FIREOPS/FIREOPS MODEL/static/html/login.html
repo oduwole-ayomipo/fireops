@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Designined by Oduwole Ayomipo -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-weidth, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.jpg">
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" charset="utf-8"></script>
+    <title> FIREOPS | LOGIN PAGE</title>
+</head>
+
+<body>
+
+  <nav>
+    <label for="toggle" id="menuBTN">Menu</label>
+    <input type="checkbox" id="toggle"></label>
+      <label class="logo">FIREOPS</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="login.html">login</a></li>
+        <li><a href="print.html">Print Result</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+   </nav>
+
+
+  <section class="main">
+      <div class="login-container">
+          <p class="title">Welcome Back</p>
+          <div class="separator"></div>
+          <p class="welcome-message">Please, provide your login details to proceed and have access to the Fire Outbreak Prediction System.</p>
+
+          <form class="login-form">
+              <div class="form-control">
+                  <input type="text" placeholder="Username">
+                  <i class="fas fa-user"></i>
+              </div>
+              <div class="form-control">
+                  <input type="password" placeholder="Password">
+                  <i class="fas fa-lock"></i>
+              </div>
+              <a class="submit" href="model.html"> Login </a>
+
+          </form>
+          <div>
+            <p class="sign-up"> New user? Sign up <a href="signup.html" class="signup-link"> here</a> </p>
+          </div >
+      </div>
+  </section>
+
+
+
+
+
+  <!--
+  <div class="full-page">
+            <div class="navbar">
+                  <div>
+                        <a href="index.html"> Fire Outbreak </br> Prediction System</a>
+                  </div>
+                  <nav>
+                      <ul id='MenuItems'>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><button class='loginbtn'onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">Login</button>
+                          </li>
+                      </ul>
+                  </nav>
+            </div>
+      </div>
+    -->
+</body>
+
+</html>

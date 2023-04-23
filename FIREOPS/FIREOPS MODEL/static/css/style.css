@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-image: url("../img/FireService.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    overflow: hidden;
+}
+
+#menuBTN{
+	  display: none;
+}
+
+#toggle{
+	  display: none;
+}
+
+
+nav{
+    background: rgba(128, 0, 32, 0.8);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: #04e762;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 70px;
+    font-weight: bold;
+    position: absolute;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f3f3f3;
+    font-size: 19px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a.active,a:hover{
+    background:  #D8315B;
+    transition: .5s;
+}
+
+/**/
+
+section{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Heading{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 12% 5% 1%;
+    color: white;
+    font-size: 1.9em;
+    padding: 5px;
+    letter-spacing: 0.3rem;
+    font-weight: bolder;
+}
+
+.Motto {
+  text-align: center;
+  text-transform: uppercase;
+  color: brown;
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+}
+
+.separator {
+    width: 20rem;
+    height: 1px;
+    background-color: #04e762;
+    margin: 3% auto;
+}
+
+.Intro{
+    margin: 2%  23%;
+    letter-spacing: 2px;
+    line-height: 23px;
+    color: #c1c1c1;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.Login{
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 0.8rem;
+  border-style: outset;
+  background-color: rgba(128, 0, 32, 0.9);
+  cursor: pointer;
+  margin: 2% 41%;
+  transition: all 0.3s ease;
+}
+
+.Login h3 a {
+  color: #f3f3f3;
+}
+
+.Login :hover{
+  opacity: 0.7;
+}
+
+
+/* ----  Responsiveness   ----  */
+@media only screen and (max-width: 1115px){
+  .Heading{
+    font-size: 1.75rem;
+    margin: 18% 5% 1%;
+  }
+  .Intro{
+    margin: 2%  20%;
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 1080px){
+ .Heading{
+    font-size: 1.7rem;
+    margin: 19% 5% 1%;
+  }
+ .Intro{
+    margin: 2%  20%;
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 1054px){
+  label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+}
+
+  nav ul li a{
+      font-size: 16px;
+}
+
+  .Heading{
+      font-size: 1.6rem;
+      margin: 20% 5% 1%;
+ }
+  .Intro{
+      margin: 2%  20%;
+      font-size: 0.6rem;
+ }
+  .Motto{
+      font-size: 0.8rem;
+}
+}
+@media only screen and (max-width: 1002px){
+  .Heading{
+      font-size: 1.5rem;
+      margin: 21% 5% 1%;
+}
+  .Intro{
+      margin: 2%  18%;
+      font-size: 0.6rem;
+}
+  .Login{
+      padding: 10px 5px 10px 5px;
+      font-size: 0.8rem;
+      margin: 3% 39%;
+}
+}
+@media only screen and (max-width: 951px){
+  .Heading{
+      font-size: 1.4rem;
+      margin: 21.5% 5% 1%;
+}
+  .Intro{
+      margin: 2%  18%;
+      font-size: 0.64rem;
+}
+}
+@media only screen and (max-width: 900px){
+	#menuBTN{
+		display: block;
+		position: absolute;
+		right: 0;
+		font-weight: 700;
+		padding: 1.8rem 1.5rem;
+    color: #f3f3f3;
+    background-color: rgba(128, 0, 32, 0.8);
+    font-size: 19px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+	}
+
+  nav ul{
+		position: absolute;
+		right: 100%;
+		top: 80px;
+		width: 100vw;
+		flex-direction: column;
+		background-color: #202020;
+		height: 100vh;
+		align-items: center;
+		justify-content: flex-start;
+		transition: .3s;
+
+	}
+  nav ul li{
+      display: block;
+      margin: 75px 20%;
+      line-height: 30px;
+      text-align: center;
+}
+
+  nav ul li a{
+      font-size: 20px;
+}
+
+  a:hover,a.active{
+      background: none;
+      color: #0082e6;
+}
+
+nav #toggle:checked ~ ul{
+  right: 0;
+}
+
+/**/
+.Heading{
+    font-size: 1.3rem;
+    margin: 22% 5% 1%;
+}
+.Intro{
+    margin: 2%  16%;
+    font-size: 0.6rem;
+}
+}
+@media only screen and (max-width: 854px){
+  .Heading{
+      font-size: 1.3rem;
+      margin: 23% 5% 0%;
+}
+  .motto{
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 538px){
+  .Heading{
+      margin: 22vh 4% 1% 4%;
+      font-size: 1.1rem;
+      letter-spacing: 0.3rem;
+  }
+  .Motto{
+      font-size: 0.6rem;
+      letter-spacing: 0.5px;
+  }
+  .separator{
+    width: 180px;
+    margin-top: 6%;
+  }
+
+  .Login{
+    font-size: 10px;
+    margin: 5% 30%;
+  }
+
+  .Intro {
+      font-size: 0.65em;
+      letter-spacing: 0.5px;
+      margin: 4%  20%;
+  }
+
+}
+
+@media only screen and (max-width: 428px){
+  .Heading{
+      margin: 40% 2% 1% 2%;
+      font-size: 1.1rem;
+      letter-spacing: 0.2rem;
+  }
+  .Motto{
+      font-size: 0.5rem;
+      margin-top: 1.2%;
+      letter-spacing: 0.7px;
+      margin-bottom: 10%;
+  }
+
+  .Login{
+    font-size: 10px;
+    margin: 10% 30%;
+  }
+
+  .Intro {
+      font-size: 0.65em;
+      letter-spacing: 0.5px;
+      margin: 7%  11%;
+  }
+}
+
+@media only screen and (max-width: 363px){
+    .Heading{
+        font-size: 1rem;
+    }
+    .Intro{
+      margin: 4%;
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .Heading{
+        font-size: 0.9rem;
+    }
+    .Motto{
+      font-size: 0.5rem;
+    }
+}
